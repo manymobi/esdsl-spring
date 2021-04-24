@@ -1,0 +1,5 @@
+==> analyze
+GET _analyze
+{
+   "text":"中华人民共和国MN","tokenizer": "ik_max_word"
+}

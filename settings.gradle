@@ -1,0 +1,3 @@
+rootProject.name = 'esdsl-spring'
+include 'esdsl-autoconfigure'
+include 'esdsl-starter'

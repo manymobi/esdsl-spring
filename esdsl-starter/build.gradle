@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+apply from: 'upload.gradle'
+
+group 'com.manymobi'
+version property("esdsl-starter")
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile('com.manymobi:esdsl-core:' + property("esdsl-core"))
+    compile('com.manymobi:esdsl-spring-boot-autoconfigure:' + property("esdsl-autoconfigure"))
+}

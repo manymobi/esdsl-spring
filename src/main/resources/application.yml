@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: INFO
+    org.springframework.data.convert.CustomConversions: ERROR
+    com.manymobi.esdsl.spring.example.mapper: DEBUG
+
+spring:
+  elasticsearch:
+    rest:
+      uris: 172.20.20.210:9200
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          connection-timeout:
